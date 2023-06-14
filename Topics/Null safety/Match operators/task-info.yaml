@@ -1,0 +1,26 @@
+type: matching
+captions:
+- "bottle ?: 0"
+- bottle?.volume
+- bottle!!.length
+options:
+- if (bottle == null) throw NullPointerException() else bottle.length
+- if (bottle != null) bottle else 0
+- if (bottle == null) null else bottle.volume
+files:
+- name: src/Main.kt
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    fun main(args: Array<String>) {
+      // put your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/20493#comment
+status: Solved
+record: -1
+ordering:
+- 0
+- 1
+- 2
